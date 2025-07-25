@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>Uncharted: The Lost Legacy - Blog</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+	<body>
+	  <header>
+		<h1>Uncharted: The Lost Legacy</h1>
+		<p>An Epic Side Adventure Worth Every Moment</p>
+		<p>by Jay Rathod</p>
+	  </header>
+
+	  <div class="container">
+		<button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+		<div class="card">
+		  <h2>Overview</h2>
+		  <img src="unnnnnn.jpg" width="500" height="600" alt="Uncharted: The Lost Legacy Cover">
+		  <p><strong>Uncharted: The Lost Legacy</strong> is a standalone expansion to the Uncharted series developed by Naughty Dog. 
+					 Released in 2017, it takes players on a thrilling adventure through India’s Western Ghats as Chloe Frazer and
+					 Nadine Ross search for the Tusk of Ganesh.</p>
+					 
+				<h2>Story Summer</h2>
+				<p>Set after the events of Uncharted 4: A Thief's End, The Lost Legacy follows Chloe Frazer,
+				a fan-favorite treasure hunter from earlier Uncharted games. 
+				She teams up with Nadine Ross, a mercenary and former antagonist from Uncharted 4, 
+				to locate the legendary Tusk of Ganesh in the Western Ghats of India.
+				The story delves into Chloe's background and heritage, her relationship with her father,
+				and the complicated dynamic between her and Nadine.
+				Together, they face off against a ruthless warlord named Asav, who is seeking the tusk for his own militant agenda.</p>
+
+		        <h2>Gameplay</h2>
+		        <p>The gameplay sticks close to the series' roots with third-person action, cinematic storytelling, and environmental puzzles. 
+			    One standout feature is the semi-open-world segment, which adds fresh freedom to explore while maintaining the intensity of 
+			    scripted sequences.</p>
+
+		       <h2>Characters</h2>
+		       <p>Chloe Frazer shines as the lead, bringing charisma and depth. 
+			    Her partnership with Nadine Ross adds a dynamic blend of conflict, banter, and growth throughout the story. 
+			    Their chemistry carries the narrative in a natural and entertaining way.</p>
+
+		       <h2>Visuals & Sound</h2>
+		       <p>Like all Naughty Dog titles, the visuals are stunning.
+			   From lush jungles to ancient ruins, every scene is detailed and atmospheric.
+			   The soundtrack and voice acting are top-tier, immersing players deeper into the world.</p>
+
+		       <h2>Final Thoughts</h2>
+		       <p>"The Lost Legacy" proves that the Uncharted franchise doesn’t need Nathan Drake to succeed.
+			   It delivers a tight, enjoyable, and beautiful experience that stands proudly alongside its predecessors.</p>
+		</div>
+	  </div>
+	  <script>
+		function toggleDarkMode() {
+		  document.body.classList.toggle('dark-mode');
+		}
+	  </script>
+	 
+     <div class="card" style="margin-top: 2rem;">
+        <h2>We'd love your feedback!</h2>
+        <form action="connect.php" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="firstName" required> 
+          <br><br>
+      
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+      
+          <label for="message">Your Feedback:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <br><br>
+      
+          <button type="submit" class="toggle-btn">Submit Feedback</button>
+        </form>
+      </div>
+      
+	 <footer>
+		&copy; 2025 Uncharted Blog by Jay Rathod | All rights reserved.
+	  </footer>
+	</body>
+	</html>
