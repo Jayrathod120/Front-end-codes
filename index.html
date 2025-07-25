@@ -1,96 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blood Donation</title>
-  <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SuperAdmin Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li class="active">Analytics</li>
+      <li>All Projects</li>
+      <li>All Schools</li>
+      <li>All Courses</li>
+      <li>My Profile</li>
+      <li>Support</li>
+    </ul>
+    <div class="user">
+      <p>Robokart (Superadmin)</p>
+      <small>superadmin@gmail.com</small>
+    </div>
+  </div>
 
-<header>
-  <h1>Blood Donation Portal</h1>
-</header>
+  <div class="main-content">
+    <header>
+      <h1>SuperAdmin Analytics</h1>
+      <p>Overview of schools, teachers, students & projects</p>
+    </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About Us</a>
-  <a href="#contact">Contact Us</a>
-  <a href="#booking">Booking</a>
-</nav>
+    <section class="cards">
+      <div class="card purple">Total Schools<br><span class="count" data-target="33">0</span></div>
+      <div class="card orange">Total Teachers<br><span class="count" data-target="11">0</span></div>
+      <div class="card white">Total Students<br><span class="count" data-target="43">0</span></div>
+      <div class="card blue">Total Projects<br><span class="count" data-target="6">0</span></div>
+      <div class="card red">Total Courses<br><span class="count" data-target="12">0</span></div>
+    </section>
 
-<section id="home">
-  <h2>Welcome to the Blood Donation Portal</h2>
-  <br>
-  <p>Blood donation is a simple yet profound act of kindness that can save countless lives.
-    Every few seconds, someone in the world needs blood, whether due to an accident, surgery, cancer treatment, 
-    or a chronic illness like anemia. Despite advancements in medicine, there is no substitute for human blood,
-    making voluntary donation a vital part of healthcare systems worldwide.
-    A single donation can save up to three lives, as blood is separated into components—red cells, platelets,
-    and plasma—each used to treat different conditions. Yet, many eligible donors do not donate regularly.
-    The World Health Organization emphasizes the need for safe and consistent donations, stating,
-    <b>"Blood is the most precious gift that anyone can give to another person—the gift of life."</b>
-    The selflessness behind donating blood reflects the highest values of compassion and community.
-    As Mahatma Gandhi once said, <b>"The best way to find yourself is to lose yourself in the service of others."</b>
-    Regular blood donors not only contribute to emergency preparedness but also help maintain a stable supply that hospitals rely on.
-    Encouraging more people to donate can be life-changing for patients and deeply rewarding for donors themselves.
-    In a world where we often feel powerless to help others, donating blood stands out as a tangible, impactful act that truly makes a difference.
-    As the Red Cross reminds us, <b>"You don’t have to be a doctor to save lives—just donate blood."</b> 
-    <br><br>
+    <section class="graph">
+      <img src="Screenshot 2025-05-27 100754.png" alt="Dashboard Graph" />
+    </section>
 
-    Despite its life-saving potential, many people do not donate blood, often due to fear, misinformation, or simply lack of awareness. 
-    To build a sustainable blood supply, it is essential to cultivate a culture where donation is seen as a civic responsibility and an 
-    act of humanity. Schools, workplaces, and communities can play a key role by organizing blood drives and spreading awareness about its importance. 
-    Testimonials from patients and repeat donors can inspire others to take part. As the American Red Cross encourages, “You don’t have to be a doctor 
-    to save lives—just donate blood.” It is a simple, safe process that takes less than an hour but leaves a lasting impact. Every drop counts,
-     and with greater participation, we can ensure that no one has to suffer or die due to a lack of blood
-    </p>
-</section>
+    <section class="courses">
+      <h2>Courses</h2>
+      <p>We need to bring learning to people instead of people to learning.</p>
+      <ul>
+        <li><b>Maths fundamentals</b> - 2/25/2025</li>
+        <li><b>3D Animation</b> - 2/25/2025</li>
+        <li><b>Chemistry</b> - 2/25/2025</li>
+        <li><b>Robotics And AI Coding</b> - 5/22/2025</li>
+        <li><b>NCERT SCIENCE 9TH</b> - 5/24/2025</li>
+      </ul>
+    </section>
+  </div>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>We are a non-profit organization committed to connecting blood donors with recipients in need. Our mission is to ensure a safe and sufficient blood supply through voluntary donations.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: support@blooddonation.org</p>
-  <p>Phone: +123 456 7890</p>
-  <p>Address: 123 Donation Lane, Health City, Country</p>
-</section>
-
-<section id="booking">
-  <h2>Book a Donation Appointment</h2>
-  <form class="booking-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="blood-type">Blood Type:</label>
-    <select id="blood-type" name="blood-type" required>
-      <option value="">Select</option>
-      <option value="A+">A+</option>
-      <option value="A-">A-</option>
-      <option value="B+">B+</option>
-      <option value="B-">B-</option>
-      <option value="AB+">AB+</option>
-      <option value="AB-">AB-</option>
-      <option value="O+">O+</option>
-      <option value="O-">O-</option>
-    </select>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4"></textarea>
-
-    <button type="submit">Book Appointment</button>
-  </form>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
